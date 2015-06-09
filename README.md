@@ -31,7 +31,6 @@ MASK EXAMPLE
 +-------------+---------+---------------------------------------+
 20 rows selected (27,804 seconds)
 
-
 0: jdbc:drill:> select  account_id, amount,  mask_nullable(cast(transaction_id as varchar(100)),'-','!','*') as transaction_id from dfs.`/frdo/gess/json/demo_gess_sink.json` where account_id LIKE 'a61%' and amount > 50 order by transaction_id limit 20;
 +-------------+---------+---------------------------------------+
 | account_id  | amount  |            transaction_id             |
