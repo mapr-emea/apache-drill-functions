@@ -1,6 +1,6 @@
 # apache-drill-functions
 
-MASK EXAMPLE
+# MASK EXAMPLE
 
 
 
